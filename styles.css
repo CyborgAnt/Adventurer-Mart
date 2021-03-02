@@ -1,11 +1,28 @@
 /* 2-27 Restart */
 body {
-    background-color: aqua; /* just a test color */
+    background-color: beige; /* just a test color */
 }
 
 div, p {
     text-align: center;
     font-weight: bold;
+}
+
+table, th, td {
+    text-align: center;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#heads {
+    font-size: larger;
+    font-weight: bolder;
+    color: maroon;      /* testing color */
 }
 
 footer {

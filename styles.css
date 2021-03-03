@@ -3,7 +3,8 @@ body {
     background-color: beige; /* just a test color */
 }
 
-div, p {
+div 
+{
     text-align: center;
     font-weight: bold;
 }
@@ -30,3 +31,26 @@ footer {
     font-size: x-large;         /* keep? */
     font-weight: bold;
 }
+
+
+/* testing hover text styles - START */
+body {
+    padding: 50px 10px;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  #hov-element {
+    border: 1px solid black;
+    display: none;
+    font-size: 12px;
+    margin: 10px;
+    padding: 10px;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  
+  #hov-div:hover #hov-element {
+    display: block;
+  }
+  /* END */

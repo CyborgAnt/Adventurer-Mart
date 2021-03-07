@@ -1,4 +1,16 @@
 /* 2-27 Restart */
+
+/* testing media styles */
+@media (max-width: 576px) {
+    .container {
+        
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: blue;
+        background-color: lightgreen;
+    }
+}
+
 body {
     background-color: beige; /* just a test color */
 }

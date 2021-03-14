@@ -1,13 +1,17 @@
 /* 2-27 Restart */
 
 /* testing media styles */
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .container {
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
         color: black;
         background-color: lightgreen;
     }
+    footer, header {
+        text-align: center;
+    }
+    
 }
 
 body {
@@ -20,9 +24,8 @@ div {
     font-weight: bold;
 }
 
-h1, footer 
+header, footer 
 {
-    text-align: center;
     font-weight: bold;
     background-color: skyblue;
     border: 5px solid darkblue;
@@ -30,6 +33,7 @@ h1, footer
 
 h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 table, th, td {
@@ -38,7 +42,7 @@ table, th, td {
     padding: 10px;
 }
 
-.center {
+.container {
     margin-left: auto;
     margin-right: auto;
 }

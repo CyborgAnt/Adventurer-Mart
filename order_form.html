@@ -1,0 +1,65 @@
+<!-- HTML Form -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>New Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body> 
+    <header>
+        <h1>Order Form</h1>
+    </header><br>
+
+    <div id="links">
+        <a href="potions.html">Potions</a>&emsp;<br>
+        <a href="ingredients.html">Ingredients</a>&emsp;<br>
+        <a href="misc.html">Misc.</a>&emsp;<br>
+        <a href="order_form.html">Order Form</a>&emsp;<br><br>
+        <a href="index.html">Back to the Lobby</a>&emsp;<br><br>
+    </div><br>
+
+<!-- Creating the Form      3/16/21 -->
+    <form>
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
+        <label for="category">Select a Category:</label>
+        <select id="category" name="Category">
+            <option value="potions">Potions</option>
+            <option value="ingredients">Ingredients</option>
+            <option value="equipment">Equipment</option>
+        </select><br><br>
+        <label for="mailbox">Select the nearest Magical Mailbox Location:</label>
+        <select id="mailbox" name="Mailbox">
+            <option value="waterdeep1">Waterdeep North</option>
+            <option value="waterdeep south">Waterdeep South</option>
+            <option value="beregost">Beregost</option>
+            <option value="athkatla">Athkatla</option>
+            <option value="trademeet">Trademeet</option>
+            <option value="gate1">Baldur's Gate SW</option>
+            <option value="gate2">Baldur's Gate NE</option>
+            <option value="inn">Friendly Arm Inn</option>
+        </select><br><br>
+        <label for="delivery">Select a Delivery Option:</label>
+        <select id="delivery" name="Delivery">
+            <option value="counter">Counter Pickup</option>
+            <option value="magic">Magical Shipping - 3% charge</option>
+            <option value="delivery">Phyiscal Delivery - 6% charge</option>
+        </select><br><br>
+        <input type="submit" value="Submit"><br><br>
+
+    </form>
+
+    <footer>
+        &copy;2021 Cyborg Studios.
+    </footer>
+
+</body>
+</html>

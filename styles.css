@@ -1,7 +1,7 @@
 /* 2-27 Restart */
 
 /* testing media styles */
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .container {
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
@@ -12,9 +12,9 @@
         text-align: center;
     }
     
-}
+} */
 
-body {
+/* body {
     background-color: beige;
 }
 
@@ -23,6 +23,7 @@ div {
     padding-right: 10px;
     font-weight: bold;
 }
+*/
 
 header, footer 
 {
@@ -36,6 +37,7 @@ h1 {
     text-align: center;
 }
 
+/*
 table, th, td {
     text-align: center;
     border: 2px solid blue;
@@ -46,6 +48,7 @@ table, th, td {
     margin-left: auto;
     margin-right: auto;
 }
+*/
 
 #heads {
     font-size: larger;
@@ -54,15 +57,16 @@ table, th, td {
 }
 
 
-/* tweak these styles when a final color scheme is settled */
+
+/* tweak these styles when a final color scheme is settled 
 <style>
-    /* Tooltip container */
+    Tooltip container 
     .tooltip {
     position: relative;
     display: inline-block;
     }
 
-    /* Tooltip text */
+    Tooltip text 
     .tooltip .tooltiptext {
     visibility: hidden;
     width: 500px;
@@ -76,8 +80,8 @@ table, th, td {
     z-index: 1;
     }
 
-    /* Show the tooltip text when you mouse over the tooltip container */
+    Show the tooltip text when you mouse over the tooltip container
     .tooltip:hover .tooltiptext {
     visibility: visible;
     }
-</style>
+</style> */

@@ -1,13 +1,18 @@
 <!-- HTML Form -->
+<!-- New Layout, 3/20/2021 -->
 <!DOCTYPE HTML>
 <html>
 
 <head>
     <title>New Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- temp deactivation
+    <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="formStyles.css">
     <!-- Adding Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
     <meta charset="utf-8">
 </head>
 
@@ -16,46 +21,135 @@
         <h1>Order Form</h1>
     </header><br>
 
-    <div id="links">
-        <a href="potions.html">Potions</a>&emsp;<br>
-        <a href="ingredients.html">Ingredients</a>&emsp;<br>
-        <a href="misc.html">Misc.</a>&emsp;<br>
-        <a href="order_form.html">Order Form</a>&emsp;<br><br>
-        <a href="index.html">Back to the Lobby</a>&emsp;<br><br>
-    </div><br>
+    <div class="order-list">
+        <div class="title">
+          Order Bag
+        </div>
 
-<!-- Creating the Form      3/16/21 -->
-    <form>
-        <label for="firstName">First name:</label><br>
-        <input type="text" id="firstName" name="firstName"><br>
-        <label for="lastName">Last name:</label><br>
-        <input type="text" id="lastName" name="lastName"><br><br>
-        <label for="category">Select a Category:</label>
-        <select id="category" name="Category">
-            <option value="potions">Potions</option>
-            <option value="ingredients">Ingredients</option>
-            <option value="equipment">Equipment</option>
-        </select><br><br>
-        <label for="mailbox">Select the nearest Magical Mailbox Location:</label>
-        <select id="mailbox" name="Mailbox">
-            <option value="waterdeep1">Waterdeep North</option>
-            <option value="waterdeep south">Waterdeep South</option>
-            <option value="beregost">Beregost</option>
-            <option value="athkatla">Athkatla</option>
-            <option value="trademeet">Trademeet</option>
-            <option value="gate1">Baldur's Gate SW</option>
-            <option value="gate2">Baldur's Gate NE</option>
-            <option value="inn">Friendly Arm Inn</option>
-        </select><br><br>
-        <label for="delivery">Select a Delivery Option:</label>
-        <select id="delivery" name="Delivery">
-            <option value="counter">Counter Pickup</option>
-            <option value="magic">Magical Shipping - 3% charge</option>
-            <option value="delivery">Phyiscal Delivery - 6% charge</option>
-        </select><br><br>
-        <input type="submit" value="Submit"><br><br>
+     <!-- Product #1 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+        </div>
+ 
+        <div class="image">
+            <img src="Images/RedVial.jpg" alt="" />
+        </div>
+ 
+        <div class="info">
+            <span><b>Minor Health Potion</b></span><br>
+            <span>Heals the user for 9 Hit Points</span><br>
+        </div>
+ 
+        <!-- Picking the quantity via drop-dowm menu -->
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+                <img src="minus.svg" alt="" />
+            </button>
+        </div>
+ 
+        <div class="Cost:">Cost: 35 SP</div>
+    </div>
 
-    </form>
+     <!-- Product #2 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+        </div>
+ 
+        <div class="image">
+            <img src="Images/RedVial.jpg" alt="" />
+        </div>
+ 
+        <div class="info">
+            <span><b>Health Potion</b></span><br>
+            <span>Heals the user for 15 Hit Points</span><br>
+            <span>Alt.</span>
+        </div>
+ 
+        <!-- Picking the quantity via drop-dowm menu -->
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+                <img src="minus.svg" alt="" />
+            </button>
+        </div>
+ 
+        <div class="Cost:">Cost: 60 SP</div>
+    </div>
+
+     <!-- Product #1 -->
+     <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+        </div>
+ 
+        <div class="image">
+            <img src="Images/RedVial.jpg" alt="" />
+        </div>
+ 
+        <div class="info">
+            <span><b>Major Health Potion</b></span><br>
+            <span>Heals the user for 25 Hit Points</span><br>
+            <span>Alt.</span>
+        </div>
+ 
+        <!-- Picking the quantity via drop-dowm menu -->
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+                <img src="minus.svg" alt="" />
+            </button>
+        </div>
+ 
+        <div class="Cost">Cost: 1 GP 5 SP</div>
+    </div>
+
+
+
+<!--
+    <script src="inventory.js"></script>
+         
+            <label for="firstName">First name:</label><br>
+            <input type="text" id="firstName" name="firstName"><br>
+            <label for="lastName">Last name:</label><br>
+            <input type="text" id="lastName" name="lastName"><br><br>
+            <label for="category">Select a Category:</label>
+            <select id="category" name="Category">
+                <option value="potions">Potions</option>
+                <option value="ingredients">Ingredients</option>
+                <option value="equipment">Equipment</option>
+            </select><br><br>
+            <label for="mailbox">Select the nearest Magical Mailbox Location:</label>
+            <select id="mailbox" name="Mailbox">
+                <option value="waterdeep1">Waterdeep North</option>
+                <option value="waterdeep south">Waterdeep South</option>
+                <option value="beregost">Beregost</option>
+                <option value="athkatla">Athkatla</option>
+                <option value="trademeet">Trademeet</option>
+                <option value="gate1">Baldur's Gate SW</option>
+                <option value="gate2">Baldur's Gate NE</option>
+                <option value="inn">Friendly Arm Inn</option>
+            </select><br><br>
+            <label for="delivery">Select a Delivery Option:</label>
+            <select id="delivery" name="Delivery">
+                <option value="counter">Counter Pickup</option>
+                <option value="magic">Magical Shipping - 3% charge</option>
+                <option value="delivery">Phyiscal Delivery - 6% charge</option>
+            </select><br><br>
+            <input type="submit" value="Submit"><br><br>
+-->      
+    <script src="inventory.js"></script>
 
     <footer>
         &copy;2021 Cyborg Studios.

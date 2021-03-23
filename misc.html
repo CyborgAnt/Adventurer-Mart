@@ -4,9 +4,9 @@
 <head>
     <title>New Project</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Adding Bootstrap 
+    <!-- Adding Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8">
 </head>
 
@@ -18,63 +18,50 @@
     <div id="links">
         <a href="potions.html">Potions</a>&emsp;<br>
         <a href="ingredients.html">Ingredients</a>&emsp;<br>
-        <a href="misc.html">Misc.</a>&emsp;<br>
+        <a href="misc.html">Equipment</a>&emsp;<br>
         <a href="order_form.html">Order Form</a>&emsp;<br><br>
         <a href="index.html">Back to the Lobby</a>&emsp;<br><br>
     </div><br>
 
-    <div>
-        <!-- Format for mobile and small screens -->
-        <div class="tooltip">
-            Glass Vials&emsp;&emsp;&emsp;&emsp;&emsp;       <!-- Look for a better way to make space between the tooltips and the text -->
-            <span class="tooltiptext">
-                You cannot make potions without somewhere to store them. <br>These vials are sold in boxes of 20, for 30 Silver Pieces (SP) per box.
-            </span>
-        </div><br>  
-        <div class="tooltip">
-            Mortar and Pestle Set&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span class="tooltiptext">
-                Crush and ground those herbs with the greatest of ease! <br> 50 SP per set.
-            </span>
-        </div><br>
-        <div class="tooltip">
-            Herb Bag&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span class="tooltiptext">
-                This bag is divided into small pockets for separating and storing various herbs and powders.<br> 20 Gold Pieces (GP) for a 10-pouch bag, 45 GP for an 24-pouch bag.
-            </span>
-        </div><br> 
-        <div class="tooltip">
-            Rope&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span class="tooltiptext">
-                Never leave home without a good coil of rope! <br>50 Copper Pieces (CP) for a 50-foot coil of rope.
-            </span>
-        </div><br> 
-        <div class="tooltip">
-            Bag of Holding&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span class="tooltiptext">
-                For when you decide to loot an entire country. <br>This bag has no defined internal size, meaning nearly anything from a coin to an airship can fit into it. The limitations: only 2o 'distinct' items can go in it; if item number 21 is put in, item number 1 is ejected. 500 GP - WILL NOT SHIP!
-            </span>
-        </div><br>
-        <div class="tooltip">
-            Magic Missile Necklace&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span class="tooltiptext">
-                A simple weapon that may save your life. <br> Each necklace fires 2 magic missiles per shot, doing 1-5 points of damage. There is a finite number of stored missiles; they can be recharge by most wizards. 20 GP
-            </span>
-        </div><br>
-        <div class="tooltip">
-            Cloak of Protection&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span class="tooltiptext">
-                A warm, sturdy (but lightweight) cloak that increases your Armor Class by 1, as well as offering 20% immunitty to fire/heat and cold/frost. 35 GP
-            </span>
-        </div><br>  
-        <div class="tooltip">
-            Potion Recipes&emsp;&emsp;&emsp;&emsp;&emsp;
-            <span class="tooltiptext">
-                Recipes for each potion in inventory. 10 SP per scroll.
-            </span>
-        </div><br>  
-            
+<!-- Responsive Columns 3/23 -->  
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3" style="background-color: yellow;"><b>Item</b></div>
+        <div class="col-sm-3" style="background-color: teal;"><b>Cost</b></div>
+        <div class="col-sm-3" style="background-color: lightgreen;"><b>Amount In Stock</b></div>
     </div>
+    <div class="row">
+        <div class="col-sm-3" style="background-color: yellow;">Glass Vials</div>
+        <div class="col-sm-3" style="background-color: teal;">20 SP per Vial<br>or<br>5 GP per 20 Vials with Holder</div>
+        <div class="col-sm-3" style="background-color: lightgreen;">500 vials</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" style="background-color: yellow;">Potion Bag</div>
+        <div class="col-sm-3" style="background-color: teal;">50 GP</div>
+        <div class="col-sm-3" style="background-color: lightgreen;">15 Bags</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" style="background-color: yellow;">Mortar & Pestle Set</div>
+        <div class="col-sm-3" style="background-color: teal;">50 SP</div>
+        <div class="col-sm-3" style="background-color: lightgreen;">50 sets</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" style="background-color: yellow;">Bag of Holding</div>
+        <div class="col-sm-3" style="background-color: teal;">500 GP</div>
+        <div class="col-sm-3" style="background-color: lightgreen;">6 bags</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" style="background-color: yellow;">Ring of Magic Missiles</div>
+        <div class="col-sm-3" style="background-color: teal;">20 GP</div>
+        <div class="col-sm-3" style="background-color: lightgreen;">5 rings</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3" style="background-color: yellow;">Cloak of Protection</div>
+        <div class="col-sm-3" style="background-color: teal;">100 GP</div>
+        <div class="col-sm-3" style="background-color: lightgreen;">8 cloaks</div>
+    </div>
+</div>
     <br>
     <script type="text/javascript"  src="form.js"></script> 
 

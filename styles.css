@@ -1,18 +1,17 @@
 /* 2-27 Restart */
 
 /* testing media styles */
-/* @media (max-width: 575px) {
+@media (max-width: 575px) {
     .container {
-        font-family: 'Times New Roman', Times, serif;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         text-align: center;
         color: black;
-        background-color: lightgreen;
     }
     footer, header {
         text-align: center;
     }
     
-} */
+}
 
 /* body {
     background-color: beige;

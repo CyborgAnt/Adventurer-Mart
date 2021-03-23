@@ -4,9 +4,9 @@
 <head>
     <title>New Project</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Adding Bootstrap 
+    <!-- Adding Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8">
 </head>
 
@@ -17,66 +17,56 @@
 
     <div id="links">
         <a href="potions.html">Potions</a>&emsp;<br>
-        <a href="ingredients.html">Ingredients</a>&emsp;<br>
-        <a href="misc.html">Misc.</a>&emsp;<br>
+        <a href="ingtealients.html">Ingredlients</a>&emsp;<br>
+        <a href="misc.html">Equipment</a>&emsp;<br>
         <a href="order_form.html">Order Form</a>&emsp;<br><br>
         <a href="index.html">Back to the Lobby</a>&emsp;<br><br>
     </div><br>
 
-    <div>
-        <!-- Format for mobile and small screens -->
-        <!-- Testing Hover Text -->
-        <div class="tooltip">
-            Minor Health Potion&emsp;
-            <span class="tooltiptext">
-                This potion is generally used for a quick top-up on health or for a quick, emergency heal.<br> The imbiber will heal for 9 hit points (HP).
-            </span>
-        </div><br>  
-        <div class="tooltip">
-            Moderate Health Potion&emsp;
-            <span class="tooltiptext">
-                If you took a beating during a battle, this potion is for you.<br> Drinking it will heal you for 15 hit points (HP).
-            </span>
-        </div><br>
-        <div class="tooltip">
-            Major Health Potion&emsp;
-            <span class="tooltiptext">
-                This potion will save you from the brink of death.<br> You will gain 25 hit points (HP) from drinking it.
-            </span>
-        </div><br> 
-        <div class="tooltip">
-            Potion of Invisibility&emsp;
-            <span class="tooltiptext">
-                For those who don't want to be seen - for good or for ill - this potion will turn you invisible for 8 hours. <br>Any attack action or spell casting will break the effect; moving, opening doors, and similar actions will not.
-            </span>
-        </div><br> 
-        <div class="tooltip">
-            Potion of Haste&emsp;
-            <span class="tooltiptext">
-                If you want to get things done quicker, this potion is for you. <br>Drinking it will double your movement and attack speed for 1 hour.
-            </span>
-        </div><br>
-        <div class="tooltip">
-            Antidote&emsp;
-            <span class="tooltiptext">
-                Drinking this potion will cure you of any poison.
-            </span>
-        </div><br>
-        <div class="tooltip">
-            Elixir of Cure Disease&emsp;
-            <span class="tooltiptext">
-                Drinking this potion will cure you of any disease, magical or non-magical.
-            </span>
-        </div><br>
-        <div class="tooltip">
-            Potion of Strength&emsp;
-            <span class="tooltiptext">
-                If you need to make your sword swing harder or if you need to throw a carriage out of the way, this potion is your key. <br>Your strength will raise to 19, affter drinking it, for 8 hours.
-            </span>
-        </div><br>       
-            
-    </div>
+    <!-- Responsive Columns 3/23 -->  
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;"><b>Potion</b></div>
+            <div class="col-sm-3" style="background-color: teal;"><b>Cost</b></div>
+            <div class="col-sm-3" style="background-color: lightgreen;"><b>Amount In Stock</b></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Minor Health Potion</div>
+            <div class="col-sm-3" style="background-color: teal;">25 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">50 vials</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Health Potion</div>
+            <div class="col-sm-3" style="background-color: teal;">45 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">25 vials</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Major Health Potion</div>
+            <div class="col-sm-3" style="background-color: teal;">75 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">12 vials</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Potion of Invisibility</div>
+            <div class="col-sm-3" style="background-color: teal;"> 	250 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">5 vials</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Potion of Haste</div>
+            <div class="col-sm-3" style="background-color: teal;">70 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">20 vials</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Antidote</div>
+            <div class="col-sm-3" style="background-color: teal;">125 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">40 vials</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Potion of Strength</div>
+            <div class="col-sm-3" style="background-color: teal;">150 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">10 vials</div>
+        </div>
+    </div>
     <br><br>
     <script type="text/javascript"  src="form.js"></script> 
     

@@ -4,9 +4,9 @@
 <head>
     <title>New Project</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Adding Bootstrap 
+    <!-- Adding Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="utf-8">
 </head>
 
@@ -18,59 +18,57 @@
     <div id="links">
         <a href="potions.html">Potions</a>&emsp;<br>
         <a href="ingredients.html">Ingredients</a>&emsp;<br>
-        <a href="misc.html">Misc.</a>&emsp;<br>
+        <a href="misc.html">Equipment</a>&emsp;<br>
         <a href="order_form.html">Order Form</a>&emsp;<br><br>
         <a href="index.html">Back to the Lobby</a>&emsp;<br><br>
     </div><br>
 
-    <!-- Table Setup -->
-    <div>
-        <!-- May not need a div? -->
-        <table class="center" style="100%">
-            <tr id="heads">
-                <th>Ingredient</th>
-                <th>Cost</th>
-                <th>Amount</th>    <!-- drop-down menu for these -->
-            </tr>
-            <tr>
-                <th>Oak Bark</th>
-                <th>15 SP</th>
-                <th>Inventory: 40 pieces</th>       
-            </tr>
-            <tr>
-                <th>Silverleaf</th>
-                <th>20 SP</th>
-                <th>Inventory 40 leaves</th>       
-            </tr>
-            <tr>
-                <th>Rose Petal(Red)</th>
-                <th>15 SP</th>
-                <th>Inventory: 35 petals</th>        
-            </tr>
-            <tr>
-                <th>Rose Petal(Black)</th>
-                <th>75 SP</th>
-                <th>Inventory: 20 petals</th>        
-            </tr>
-            <tr>
-                <th>Diamond Dust</th>
-                <th>50 GP</th>
-                <th>Inventory: 12 small vials</th>        
-            </tr>
-            <tr>
-                <th>Mummy Wrappings, small pieces</th>
-                <th>20 GP per box</th>
-                <th>Inventory: 6 small boxes</th>        <!-- special message about adventurers and getting supplies -->
-            </tr>
-            <tr>
-                <th>Lily Blossom</th>
-                <th>5 GP</th>
-                <th>Inventory: 20 GP</th>        
-            </tr>
+    <!-- Responsive Columns 3/23 -->  
 
-        </table>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;"><b>Ingredient</b></div>
+            <div class="col-sm-3" style="background-color: red;"><b>Cost</b></div>
+            <div class="col-sm-3" style="background-color: lightgreen;"><b>Amount In Stock</b></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Oak Bark</div>
+            <div class="col-sm-3" style="background-color: red;">15 SP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">40 pieces</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Silverleaf</div>
+            <div class="col-sm-3" style="background-color: red;">30 SP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">40 leaves</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Rose Petal(Red)</div>
+            <div class="col-sm-3" style="background-color: red;">15 SP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">35 petals</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Rose Petal(Black)</div>
+            <div class="col-sm-3" style="background-color: red;">75 SP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">20 petals</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Diamond Dust</div>
+            <div class="col-sm-3" style="background-color: red;">350 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">12 small vials</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Mummy Wrappings</div>
+            <div class="col-sm-3" style="background-color: red;">200 GP per box</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">8 small boxes, 10 pieces per box</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3" style="background-color: yellow;">Lily Blossom</div>
+            <div class="col-sm-3" style="background-color: red;">5 GP</div>
+            <div class="col-sm-3" style="background-color: lightgreen;">20 blooms</div>
+        </div>
     </div>
+
+
 
     <br>
     <script type="text/javascript"  src="form.js"></script> 

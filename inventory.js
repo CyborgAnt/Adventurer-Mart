@@ -28,3 +28,4 @@ $('.plus-btn').on('click', function(e) {
 
   $input.val(value);
 });
+

@@ -117,36 +117,70 @@
     </div> -->
 
          
-            <label for="firstName">First name:</label><br>
-            <input type="text" id="firstName" name="firstName"><br>
-            <label for="lastName">Last name:</label><br>
-            <input type="text" id="lastName" name="lastName"><br><br>
-            <label for="category">Select a Category:</label>
-            <select id="category" name="Category">
-                <option value="potions">Potions</option>
-                <option value="ingredients">Ingredients</option>
-                <option value="equipment">Equipment</option>
-            </select><br><br>
-            <label for="mailbox">Select the nearest Magical Mailbox Location:</label>
-            <select id="mailbox" name="Mailbox">
-                <option value="waterdeep1">Waterdeep North</option>
-                <option value="waterdeep south">Waterdeep South</option>
-                <option value="beregost">Beregost</option>
-                <option value="athkatla">Athkatla</option>
-                <option value="trademeet">Trademeet</option>
-                <option value="gate1">Baldur's Gate SW</option>
-                <option value="gate2">Baldur's Gate NE</option>
-                <option value="inn">Friendly Arm Inn</option>
-            </select><br><br>
-            <label for="delivery">Select a Delivery Option:</label>
-            <select id="delivery" name="Delivery">
-                <option value="counter">Counter Pickup</option>
-                <option value="magic">Magical Shipping - 3% charge</option>
-                <option value="delivery">Phyiscal Delivery - 6% charge</option>
-            </select><br><br>
-            <input type="submit" value="Submit"><br><br>
-    
-    <script src="inventory.js"></script>
+    <p>
+        Click on the button to create
+        a form dynamically
+      </p>
+      <button onClick="onyxForm()">
+          click here
+      </button>
+      <p id="store"></p>
+<script>
+  var down = document.getElementById("store");
+          
+  // Create a break line element
+  var br = document.createElement("br"); 
+  function onyxForm() {
+              
+  // Dynamic Form
+  var form = document.createElement("form");
+  form.setAttribute("method", "post");
+  form.setAttribute("action", "submit.php");
+
+  // Create an input element for Full Name
+  var FN = document.createElement("input");
+  FN.setAttribute("type", "text");
+  FN.setAttribute("name", "FullName");
+  FN.setAttribute("placeholder", "Full Name");
+
+   // Create an input element for Class
+   var classShopper = document.createElement("input");
+   classShopper.setAttribute("type", "text");
+   classShopper.setAttribute("name", "class");
+   classShopper.setAttribute("placeholder", "Class (Adventurer, Blacksmith, Other, etc.)");
+
+   // Element for 'Magic Mailbox' location
+   var magicBox = document.createElement("input");
+   magicBox.setAttribute("type", "text");
+   magicBox.setAttribute("name", "mailbox_City");
+   magicBox.setAttribute("placeholder", "Mailbox_City");
+
+              // Submit button
+              var s = document.createElement("input");
+              s.setAttribute("type", "submit");
+              s.setAttribute("value", "Submit");
+                
+              // Append the full name input to the form
+              form.appendChild(FN); 
+                
+              // Inserting a line break
+              form.appendChild(br.cloneNode()); 
+                
+              // Append the Class to the form
+              form.appendChild(classShopper); 
+              form.appendChild(br.cloneNode()); 
+                
+              // Append the Maigc Mailbox to the form
+              form.appendChild(magicBox); 
+              form.appendChild(br.cloneNode()); 
+                
+              // Append the submit button to the form
+              form.appendChild(s); 
+
+              document.getElementsByTagName("body")[0]
+             .appendChild(form);
+}
+</script>
 
     <footer>
         &copy;2021 Cyborg Studios.

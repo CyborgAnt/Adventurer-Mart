@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Mailing List</title>
+        <link rel="stylesheet" href="formStyles.css">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <div class="NewForm">
+
+        <div>
+            <input type="text" id="name" placeholder="Enter Name:" />
+        </div>
+        <div>
+            <input type="text" id="Profession" placeholder="Enter Your Profession (Adventurer, Mage, Blacksmith, etc.):" />
+        </div>
+        <div>
+            <select id="selectRegion">
+                <option selected value="">--Choose Your Magical Mailbox Region:</option>
+                <option value="Waterdeep">Waterdeep</option>
+                <option value="Amn">Amn</option>
+                <option value="GateNorth">Baldur's Gate North</option>
+                <option value="GateSouth">Baldur's Gate South</option>
+                <option value="Athkatla">Athkatla</option>
+                <option value="Neverwinter">Neverwinter</option>
+                <option value="Inn">Friendly Arm Inn</option>
+            </select>
+        </div>
+            
+            <div>
+                <textarea id="msg" name="comments" placeholder="Additional Comments ..." style="height:100px"></textarea>
+            </div>
+
+            <div>
+                <input type="button" id="bt" value="Save to dataList" onclick="fileSave()" />
+            </div>
+        </div>
+    </body>
+    <script src="newMailingList.js"></script>
+
+</html>

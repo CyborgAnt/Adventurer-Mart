@@ -1,7 +1,5 @@
 // creating dictionaries for Potions, Ingredients, and Misc. inventories
 // Key Value Pairs: Key - Item, Value - Cost (in Silver Pieces)
-// Change Inventory pages from 4 columns to 3
-// Make a Conversion Tool
 
 var potionDict = {
     Minor_Health_Potion: 500,
@@ -32,4 +30,5 @@ var miscDict = {
     Cloak_Of_Protection: 2000
 };
 
+/* test */
 

@@ -63,6 +63,29 @@
         </div>
     </div>
 
+    <p> The costs of each item, in Silver Pieces (SP):</p>
+    <p id="misct"></p>
+
+    <script>
+        var misc, txt = "";
+        
+        var miscDict = {
+        Glass_Vials: 20,
+        Potion_Bag: 1000,
+        Mortar_And_Pestle_Set: 50,
+        Bag_Of_Holding: 10000,
+        Ring_Of_Magic_Missiles: 400,
+        Cloak_Of_Protection: 2000
+        };
+
+
+        for (misc in miscDict) {
+            txt += miscDict[misc] + " SP " + "<br>";
+        };
+
+        document.getElementById("misct").innerHTML = txt;
+    </script>
+
     <br><br><br><br>
     <footer>
         &copy;2021 Cyborg Studios.

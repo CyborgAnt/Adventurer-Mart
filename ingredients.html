@@ -71,7 +71,30 @@
 
     <br>
 
-    <br><br><br><br><br>
+    <p> The costs of each ingredient, in Silver Pieces (SP):</p>
+    <p id="ingreds"></p>
+
+    <script>
+        var ingredient, txt = "";
+        
+        var ingredientsDict = {
+        Oak_Bark: 15,
+        Silverleaf: 30,
+        Rose_Petal_Red: 15,
+        Rose_Petal_Black: 75,
+        Diamond_Dust: 7000,
+        Mummy_Wrappings: 4000,
+        Lily_Blossom: 100
+        };
+
+        for (ingredient in ingredientsDict) {
+            txt += ingredientsDict[ingredient] + " SP " + "<br>";
+        };
+
+        document.getElementById("ingreds").innerHTML = txt;
+    </script>
+
+    <br><br><br>
     <footer>
         &copy;2021 Cyborg Studios.
     </footer>

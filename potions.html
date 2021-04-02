@@ -67,7 +67,29 @@
             <div class="col-sm-4" style="background-color: turquoise;"><b>Increases your Strength by 4, for those times when you need to throw a Carriage at someone.</b></div>
         </div>
     </div>
+
+    <p> The costs of each Potion, in Silver Pieces (SP):</p>
+    <p id="pots"></p>
     
+    <script>
+        var pot, txt = "";
+        
+        var potionDict = {
+            Minor_Health_Potion: 500,
+            Health_Potion: 900,
+            Major_Health_Potion: 1500,
+            Potion_Of_Invisibility: 5000,
+            Potion_Of_Haste: 1400,
+            Antidote: 2500,
+            Potion_Of_Strength: 3000
+        };
+
+        for (pot in potionDict) {
+            txt += potionDict[pot] + " SP " + "<br>";
+        };
+
+        document.getElementById("pots").innerHTML = txt;
+    </script>
     
     <br><br><br><br><br>
     <footer>

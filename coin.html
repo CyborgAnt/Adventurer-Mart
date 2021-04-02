@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>New Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body> 
+    <p id="coins"></p>
+    <script>
+        // series of functions, converting between copper, silver, and gold pieces
+        // using 'switch-cases'
+
+        var coinToConvert = prompt ("Enter the coin conversion you want to use: \na. Copper to Silver\nb. Copper to Gold\nc. Silver to Copper\nd. Silver to Gold\ne. Gold to Copper\nf. Gold to Silver");
+
+        switch(coinToConvert) {
+            case 'a':
+                // copper-to-silver
+                copperToSilver();
+                break;
+            case 'b':
+                copperToGold();
+                break;
+            case 'c':
+                silverToCopper();
+                break;
+            case 'd':
+                silverToGold();
+                break;
+            case 'e':
+                goldToCopper();      
+                break;
+            case 'f':
+                goldToSilver();
+                break;
+            default:
+                document.write("I'm not sure what you are trying to convert.");
+                break;
+        }
+        function copperToSilver () {
+            var copper = prompt ("Enter your amount of Copper Pieces: ");
+            let silver = Math.trunc(copper / 20);
+            let copp = copper % 20; 
+            document.getElementById("coins").innerHTML = copper + " copper pieces (CP) equals " + silver + " silver pieces (SP) plus " + copp + " CP.";
+        }
+        // copper-to-gold
+        function copperToGold () {
+            var copper = prompt ("Enter your amount of Copper Pieces: ");
+            let gold = Math.trunc(copper / 400);
+            let copp = copper % 400; 
+            document.getElementById("coins").innerHTML = copper + " copper pieces (CP) equals " + gold + " gold pieces (GP) plus " + copp + " copper pieces.";
+        }
+        // silver-to-copper
+        function silverToCopper () {
+            var silver = prompt ("Enter your amount of Silver Pieces (SP): ");
+            let copper = silver * 20;
+            document.getElementById("coins").innerHTML = silver + " SP equals " + copper + " copper pieces (CP).";
+        }
+        // silver-to-gold
+        function silverToGold () {
+                    var silver = prompt ("Enter your amount of Silver Pieces (SP): ");
+                    let gold = Math.trunc(silver / 20);
+                    let silv = silver % 20; 
+                    document.getElementById("coins").innerHTML = silver + " pieces equals " + gold + " pieces plus " + silv + " silver pieces.";
+        }
+        // gold-to-silver    
+        function goldToSilver () {
+                    var gold = prompt ("Enter your amount of Gold Pieces (GP): ");
+                    let silver = gold * 20;
+                    document.getElementById("coins").innerHTML = gold + " pieces equals " + silver + " silver pieces.";
+        }
+        // gold-to-copper
+        function goldToCopper () {
+                var gold = prompt ("Enter your amount of Gold Pieces (GP): ");
+                let copper = gold * 400; 
+                document.getElementById("coins").innerHTML = gold + " pieces equals " + copper + " Copper pieces.";
+        }
+
+    </script>  
+    
+    <br>
+    <a href="index.html">Return to the Lobby</a>
+    <br><br>
+
+    <footer>
+        &copy;2021 Cyborg Studios.
+    </footer>
+
+</body>
+</html>

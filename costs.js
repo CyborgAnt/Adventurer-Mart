@@ -30,5 +30,4 @@ var miscDict = {
     Cloak_Of_Protection: 2000
 };
 
-/* test */
 
